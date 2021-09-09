@@ -30,4 +30,4 @@ DeMarkerOscillator = vbt.IndicatorFactory(
     input_names=['high', 'low'],
     param_names=['period'],
     output_names=['dem', 'demin_avg', 'demax_avg'],
-).from_apply_func(rolling_demarker_nb)
+).from_apply_func(rolling_demarker_nb, period=13)
